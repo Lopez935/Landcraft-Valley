@@ -10,13 +10,25 @@ ul {
     background-color: #ca2c2c;
 }
 /*Modificar texto dentro del recuadro*/
-.caja {  
+.caja-i {  
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #000000; 
     font-size: 18px; 
     font-weight: 400; 
     text-align: center; 
     background: #fdecec; 
+    margin: -15px 250px 0px 250px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border: 2px solid #2bec24;
+    }
+.caja-n{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #000000; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #fdecec;
     margin: -15px 250px 0px 250px; 
     overflow: hidden; 
     padding: 20px; 
