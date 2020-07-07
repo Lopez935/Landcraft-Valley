@@ -46,7 +46,7 @@ li a.active {
 }
 /*Imagen de fondo de la pagina*/
 body {
-    background-image: url(/image/fondo.png);
+    background-image: url(image/fondo.png);
     background-color: transparent;
 }
 
