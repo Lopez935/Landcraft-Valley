@@ -113,6 +113,8 @@ nav a{
 .noticias-title{
     text-align: center;
     width: 100%;
+    padding-right: 200px;
+    font-size: 30px;
 }
 
 .noticias-date img {
@@ -140,6 +142,30 @@ nav a{
 
 .noticias-texto{
     padding: 0 20px;
+}
+
+.noticias-adicional{
+    display: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addition-img{
+    margin: 100px;
+}
+
+.addition-img img{
+    width: 100%;
+}
+
+.text-more{
+    color: blue;
+    cursor: pointer;
+}
+.text-less{
+    color: blue;
+    cursor: pointer;
 }
 
 /*Footer*/
