@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+body{
+    margin: 0px;
+    background-image: url(image/fondo.png);
+    background-attachment: fixed;
+}
+
+#cajaGlobal{
+    width: 71%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+/*Header*/
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#logo img{
+    width: 100%;
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ca2c2c;
+    border: 1px solid black;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 80px;
+    margin-top: -6px;
+}
+
+nav ul{
+    line-height: 46px;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    transition: all 300ms;
+}
+
+nav ul li:hover{
+    background-color: green;
+}
+
+nav a{
+    display: block;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Contenido Global*/
+#contentGlobal{
+    background-color: white;
+}
+
+#contenidoParticipantes{
+    padding: 20px;
+    background-color: transparent;
+    font-size: Arial, Helvetica, sans-serif;
+}
+
+.participantes{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.participantes img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.participantes h2{
+    border-radius: 3px;
+    color: white;
+    background-color: #BF4545;
+}
+
+.participantes h3{
+    margin-bottom: 5px;
+}
+
+.participantes p{
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.nombreImagen{
+    width: 30%;
+    /*float: left;*/
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.descripcion{
+    width: 60%;
+    display: inline-block;
+}
+
+/*Footer*/
+footer{
+    height: 190px;
+    background-color: #412D1D;
+    color: white;
+}
+
+canvas{
+    background-color: #412D1D;
+    width: 100%;
+}
