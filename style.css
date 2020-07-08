@@ -27,12 +27,12 @@ ul {
     color: #000000; 
     font-size: 18px; 
     font-weight: 400; 
-    text-align: center; 
-    background: #fdecec;
+    /* text-align: center;  */
+    background-color: var(--morado-color);
     margin: -15px 250px 0px 250px; 
     overflow: hidden; 
-    padding: 20px; 
-    border: 2px solid #2bec24;
+    padding: 50px; 
+    /* border: 2px solid #2bec24; */
     }
 
 li {
