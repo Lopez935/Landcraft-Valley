@@ -8,11 +8,12 @@
     border-radius: 10px;
     border: 1px solid black;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .noticias-head{
     display: flex;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .noticias-date{
@@ -55,4 +56,16 @@
 
 .noticias-texto{
     padding: 0 20px;
+}
+
+/*Footer*/
+footer{
+    height: 190px;
+    background-color: #412D1D;
+    color: white;
+}
+
+canvas{
+    background-color: #412D1D;
+    width: 100%;
 }
