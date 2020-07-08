@@ -1,3 +1,8 @@
+:root{
+    --morado-color: #C8B9F2;
+    --yellow-color: #EDDF93;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -69,7 +74,7 @@ nav a{
 
 /*Contenido Global*/
 #contentGlobal{
-    background-color: white;
+    background-color: var(--morado-color);;
 }
 
 #contenidoParticipantes{
@@ -80,6 +85,7 @@ nav a{
 
 .participantes{
     padding: 20px;
+    background-color: var(--yellow-color);;
     border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 20px;

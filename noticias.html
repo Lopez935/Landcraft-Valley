@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Omega</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="news-style.css">
 </head>
 <body>
-    <img class="Logo" src="image/PreLogo.png" alt="stylesheet">
-    <div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="participantes.html">Participantes</a></li>
-            <li><a href="galeria.html">Galerias</a></li>
-          </ul>
-    </div>
-    <div class="caja-n">
-        <div id="contenidoNoticias">
-        </div>
-    </div>
+    <section id="cajaGlobal">
+        <header>
+            <div id="logo">
+                <img class="Logo" src="image/PreLogo.png" alt="stylesheet">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="participantes.html">Participantes</a></li>
+                    <li><a href="galeria.html">Galerias</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Noticias -->
+        <section id="contentGlobal">
+            <div id="contenidoNoticias">
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </section>
     <footer>
         <canvas height="60px"></canvas>
         <p>Hola Mundo 🌎</p>
