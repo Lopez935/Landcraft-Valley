@@ -8,36 +8,36 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            imgExtra1: '',
-            imgExtra2: '',
-            imgExtra3: ''
+            imgExtra1: 'image/example.png',
+            imgExtra2: 'image/example.png',
+            imgExtra3: 'image/example.png'
         },
         {
             title: 'Navidad',
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            imgExtra1: '',
-            imgExtra2: '',
-            imgExtra3: ''
+            imgExtra1: 'image/example.png',
+            imgExtra2: 'image/example.png',
+            imgExtra3: 'image/example.png'
         },
         {
             title: 'Hallowen',
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            imgExtra1: '',
-            imgExtra2: '',
-            imgExtra3: ''
+            imgExtra1: 'image/example.png',
+            imgExtra2: 'image/example.png',
+            imgExtra3: 'image/example.png'
         },
         {
             title: 'Hallowen',
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            imgExtra1: '',
-            imgExtra2: '',
-            imgExtra3: ''
+            imgExtra1: 'image/example.png',
+            imgExtra2: 'image/example.png',
+            imgExtra3: 'image/example.png'
         },
     ];
     
@@ -61,6 +61,17 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                     <div class="noticias-texto">
                         <p>${noticia.description}</p>
                         <a href="#">Ver mas</a>
+                    </div>
+                </div>
+                <div class="noticias-adicional">
+                    <div class="addition-img">
+                        <img src="${noticia.imgExtra1}">
+                    </div>
+                    <div class="addition-img">
+                        <img src="${noticia.imgExtra2}">
+                    </div>
+                    <div class="addition-img">
+                        <img src="${noticia.imgExtra3}">
                     </div>
                 </div>
             </div>
