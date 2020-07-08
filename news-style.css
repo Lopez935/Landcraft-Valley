@@ -145,7 +145,7 @@ nav a{
 }
 
 .noticias-adicional{
-    display: flex;
+    display: none;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -157,6 +157,15 @@ nav a{
 
 .addition-img img{
     width: 100%;
+}
+
+.text-more{
+    color: blue;
+    cursor: pointer;
+}
+.text-less{
+    color: blue;
+    cursor: pointer;
 }
 
 /*Footer*/

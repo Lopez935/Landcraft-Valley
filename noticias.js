@@ -4,6 +4,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
 (function(tecnologia){
     var noticias = [
         {
+            id: '1',
             title: 'Hallowen',
             time: 'DD/MM/AA - Hora',
             img: '',
@@ -13,6 +14,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             imgExtra3: 'image/example.png'
         },
         {
+            id: '2',
             title: 'Navidad',
             time: 'DD/MM/AA - Hora',
             img: '',
@@ -22,6 +24,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             imgExtra3: 'image/example.png'
         },
         {
+            id: '3',
             title: 'Hallowen',
             time: 'DD/MM/AA - Hora',
             img: '',
@@ -31,6 +34,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             imgExtra3: 'image/example.png'
         },
         {
+            id: '4',
             title: 'Hallowen',
             time: 'DD/MM/AA - Hora',
             img: '',
@@ -60,10 +64,11 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                     </div>
                     <div class="noticias-texto">
                         <p>${noticia.description}</p>
-                        <a href="#">Ver mas</a>
+                        <p class="text-more" id="vma${noticia.id}" onclick="document.getElementById('n${noticia.id}').style.display = 'flex'; document.getElementById('vma${noticia.id}').style.display = 'none'; document.getElementById('vme${noticia.id}').style.display = 'contents'" style="display:contents;">Ver mas</p>
+                        <p class="text-less" id="vme${noticia.id}" onclick="document.getElementById('n${noticia.id}').style.display = 'none'; document.getElementById('vme${noticia.id}').style.display = 'none'; document.getElementById('vma${noticia.id}').style.display = 'contents'" style="display:none;">Ver menos</p>
                     </div>
                 </div>
-                <div class="noticias-adicional">
+                <div class="noticias-adicional" id="n${noticia.id}">
                     <div class="addition-img">
                         <img src="${noticia.imgExtra1}">
                     </div>
