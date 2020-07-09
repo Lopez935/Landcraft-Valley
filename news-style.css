@@ -40,11 +40,11 @@ body{
 }
 
 .fondo-logo{
-    height: 465px;
+    height: 465px;   /* Cambiando 465 por 1000px*/
     background-color: var(--morado-color);
     border: 1px solid;
     border-radius: 100%;
-    margin-bottom: -243px;
+    margin-bottom: -243px;  /*Cambiando -243 por -770px*/
 }
 
 .logo{
