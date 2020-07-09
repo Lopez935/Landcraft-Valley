@@ -39,6 +39,23 @@ body{
     width: 100%;
 }
 
+.fondo-logo{
+    height: 465px;
+    background-color: var(--morado-color);
+    border: 1px solid;
+    border-radius: 100%;
+    margin-bottom: -243px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 17%;
+}
+
 nav{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ca2c2c;
@@ -47,6 +64,7 @@ nav{
     width: 100%;
     line-height: 80px;
     margin-top: -6px;
+    box-sizing: border-box;
 }
 
 nav ul{
@@ -133,6 +151,8 @@ nav a{
 
 .principal-img {
     width: 370px;
+    font-size: 10px;
+    color: gray;
 }
 
 .principal-img img {
