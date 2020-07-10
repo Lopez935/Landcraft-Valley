@@ -1,0 +1,23 @@
+#contentGlobal{
+    padding: 20px;
+}
+
+.gridFoto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    padding: 1em;
+    text-align: center;
+}
+
+.gridFoto a{
+    padding: 1em;
+}
+
+.gridFoto img{
+    width: 100%;
+}
+
+#contentGlobal h2{
+    margin-left: 1em;
+}
+
