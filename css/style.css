@@ -16,7 +16,7 @@
 
 body{
     margin: 0px;
-    background-image: url(image/fondo.png);
+    background-image: url(../image/fondo.png);
     background-attachment: fixed;
 }
 
@@ -90,96 +90,43 @@ nav a{
     text-decoration: none;
 }
 
-/*Contenido Global*/
 #contentGlobal{
-    background-color: var(--morado-color);;
+    background-color: var(--morado-color);
 }
 
-#contenidoParticipantes{
+#contenidoGeneral{
     padding: 20px;
+    color: #000000; 
+    font-size: 18px; 
+    font-weight: 400; 
     background-color: transparent;
-    font-size: Arial, Helvetica, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    display: flex;
 }
 
-.participantes{
+.logo-inicio{
+    padding: 0 50px 0 25px;
+}
+
+.info-inicio{
     padding: 20px;
-    background-color: var(--yellow-color);;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background-color: white;
 }
 
-.participantes img{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.title-inicio{
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px purple;
+    font-size: 35px;
 }
 
-.participantes h2{
-    border-radius: 3px;
-    color: white;
-    background-color: #BF4545;
+.description-inicio{
+    margin-left: 60px;
+    margin-right: 74px;
+    font-size: 28px;
 }
 
-.participantes h3{
-    margin-bottom: 5px;
-}
 
-.participantes p{
-    line-height: 22px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
 
-.social{
-    float: right;
-}
-
-.social a{
-    display: inline-flex;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 48px;
-    width: 48px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: all 300ms;
-}
-
-.social a:hover{
-    transform: scale(1.3);
-}
-
-.social .facebook{
-    background-color: #3C5A99;
-}
-
-.social .twitter{
-    background-color: #05AFF2;
-}
-
-.social .youtube{
-    background-color: #A60808;
-}
-
-.social .twitch{
-    background-color: #6441a5;
-}
-
-.nombreImagen{
-    width: 30%;
-    /*float: left;*/
-    display: inline-block;
-    text-align: center;
-    margin-right: 3%;
-}
-
-.descripcion{
-    width: 60%;
-    display: inline-block;
-}
 
 /*Footer*/
 footer{
