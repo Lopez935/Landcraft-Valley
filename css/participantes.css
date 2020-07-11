@@ -16,7 +16,7 @@
 
 body{
     margin: 0px;
-    background-image: url(image/fondo.png);
+    background-image: url(../image/fondo.png);
     background-attachment: fixed;
 }
 
@@ -39,6 +39,23 @@ body{
     width: 100%;
 }
 
+.fondo-logo{
+    height: 465px;   /* Cambiando 465 por 1000px*/
+    background-color: var(--morado-color);
+    border: 1px solid;
+    border-radius: 100%;
+    margin-bottom: -243px;  /*Cambiando -243 por -770px*/
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 17%;
+}
+
 nav{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ca2c2c;
@@ -47,6 +64,7 @@ nav{
     width: 100%;
     line-height: 80px;
     margin-top: -6px;
+    box-sizing: border-box;
 }
 
 nav ul{

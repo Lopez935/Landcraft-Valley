@@ -9,6 +9,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
+            etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/example.png',
             imgExtra2: 'image/example.png',
             imgExtra3: 'image/example.png'
@@ -19,6 +20,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
+            etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/example.png',
             imgExtra2: 'image/example.png',
             imgExtra3: 'image/example.png'
@@ -29,6 +31,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
+            etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/example.png',
             imgExtra2: 'image/example.png',
             imgExtra3: 'image/example.png'
@@ -39,6 +42,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             time: 'DD/MM/AA - Hora',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
+            etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/example.png',
             imgExtra2: 'image/example.png',
             imgExtra3: 'image/example.png'
@@ -61,6 +65,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                 <div class="noticias-contenido">
                     <div class="principal-img">
                         <img src="image/example.png">
+                        <p>${noticia.etiquetas}</p>
                     </div>
                     <div class="noticias-texto">
                         <p>${noticia.description}</p>
