@@ -105,7 +105,7 @@ nav a{
 }
 
 .logo-inicio{
-    padding: 40px;
+    padding: 0 50px 0 25px;
 }
 
 .info-inicio{
@@ -116,13 +116,13 @@ nav a{
 .title-inicio{
     margin-bottom: 10px;
     text-shadow: 0 0 6px purple;
+    font-size: 35px;
 }
 
 .description-inicio{
     margin-left: 60px;
     margin-right: 74px;
-    font-size: 22px;
-
+    font-size: 28px;
 }
 
 
