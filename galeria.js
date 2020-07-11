@@ -25,28 +25,56 @@ const listaFotos = document.getElementById('contentGlobal');
             img4: 'image/imgPrueba12.jpg',
         },
     ];
-    
+
+    let constante = 0;
+
     fotos.forEach(function(foto, index){
         const h2Foto = document.createElement('h2');
         h2Foto.innerHTML = `${foto.fecha}`;
 
         const divFoto = document.createElement('div');
         divFoto.innerHTML = `
-            <a href="#image1">
+            <a href="#image${constante}">
                 <img src="${foto.img1}" alt="foto"/>
             </a>
-            <a href="#image2">
+            <a href="#image${constante + 1}">
                 <img src="${foto.img2}" alt="foto"/>
             </a>
-            <a href="#image3">
+            <a href="#image${constante + 2}">
                 <img src="${foto.img3}" alt="foto"/>
             </a>
-            <a href="#image4">
+            <a href="#image${constante + 3}">
                 <img src="${foto.img4}" alt="foto"/>
             </a>
         `;
+
+        const divlightbox = document.createElement('div');
+        divlightbox.innerHTML = `
+            <div class="light-box" id="image${constante}">
+                <img src="${foto.img1}" alt="">
+                <a href="#" class="close">X</a>
+            </div>
+
+            <div class="light-box" id="image${constante + 1}">
+                <img src="${foto.img2}" alt="">
+                <a href="#" class="close">X</a>
+            </div>
+
+            <div class="light-box" id="image${constante + 2}">
+                <img src="${foto.img3}" alt="">
+                <a href="#" class="close">X</a>
+            </div>
+
+            <div class="light-box" id="image${constante + 3}">
+                <img src="${foto.img4}" alt="">
+                <a href="#" class="close">X</a>
+            </div>
+        `;
+
         listaFotos.appendChild(h2Foto);
         divFoto.className="gridFoto";
         listaFotos.appendChild(divFoto);
+        listaFotos.parentElement.parentElement.appendChild(divlightbox);
+        constante+=4;
     });
 })();
