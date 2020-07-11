@@ -69,8 +69,24 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                     </div>
                     <div class="noticias-texto">
                         <p>${noticia.description}</p>
-                        <p class="text-more" id="vma${noticia.id}" onclick="document.getElementById('n${noticia.id}').style.display = 'flex'; document.getElementById('vma${noticia.id}').style.display = 'none'; document.getElementById('vme${noticia.id}').style.display = 'contents'" style="display:contents;">Ver mas</p>
-                        <p class="text-less" id="vme${noticia.id}" onclick="document.getElementById('n${noticia.id}').style.display = 'none'; document.getElementById('vme${noticia.id}').style.display = 'none'; document.getElementById('vma${noticia.id}').style.display = 'contents'" style="display:none;">Ver menos</p>
+                        <p class="text-more" id="vma${noticia.id}" onclick="
+                        document.getElementById('n${noticia.id}').style.visibility = 'visible'; 
+                        document.getElementById('n${noticia.id}').style.height = '240px'; 
+                        document.getElementById('n${noticia.id}').style.opacity = '1';
+                        document.getElementById('n${noticia.id}').style.transition = 'visibility 2s, opacity 2s, height 0.4s';
+                        
+                        
+                        document.getElementById('vma${noticia.id}').style.display = 'none'; 
+                        document.getElementById('vme${noticia.id}').style.display = 'contents'" style="display:contents;">Ver mas</p>
+                        <p class="text-less" id="vme${noticia.id}" onclick="
+                        document.getElementById('n${noticia.id}').style.visibility = 'hidden'; 
+                        document.getElementById('n${noticia.id}').style.height = '0px';
+                        document.getElementById('n${noticia.id}').style.opacity = '0';
+                        document.getElementById('n${noticia.id}').style.transition = 'visibility 0.4s, opacity 0.3s, height 0.6s';
+                        
+                        
+                        document.getElementById('vme${noticia.id}').style.display = 'none'; 
+                        document.getElementById('vma${noticia.id}').style.display = 'contents'" style="display:none;">Ver menos</p>
                     </div>
                 </div>
                 <div class="noticias-adicional" id="n${noticia.id}">
