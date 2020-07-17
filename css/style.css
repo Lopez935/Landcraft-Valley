@@ -14,10 +14,15 @@
     clear: both;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 body{
     margin: 0px;
     background-image: url(../image/fondo.png);
     background-attachment: fixed;
+    height: 100vh;
 }
 
 #cajaGlobal{
