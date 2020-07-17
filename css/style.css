@@ -176,15 +176,27 @@ canvas{
     .description-inicio{
         margin-left: 0;
         margin-right: 0;
-        font-size: 14px;
+        font-size: 11px;
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 413px){
     .logo img {
         width: 39%;
     }
     nav a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 356px){
+    .fondo-logo{
+        height: 330px;
+    }
+    nav a{
+        font-size: 8px;
+    }
+    .description-inicio{
         font-size: 10px;
     }
 }
