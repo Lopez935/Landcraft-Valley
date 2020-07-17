@@ -10,9 +10,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
-            imgExtra1: 'image/example.png',
-            imgExtra2: 'image/example.png',
-            imgExtra3: 'image/example.png'
+            imgExtra1: 'image/imgPrueba8.jpg',
+            imgExtra2: 'image/imgPrueba9.jpg',
+            imgExtra3: 'image/imgPrueba10.jpg'
         },
         {
             id: '2',
@@ -21,9 +21,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
-            imgExtra1: 'image/example.png',
-            imgExtra2: 'image/example.png',
-            imgExtra3: 'image/example.png'
+            imgExtra1: 'image/imgPrueba8.jpg',
+            imgExtra2: 'image/imgPrueba9.jpg',
+            imgExtra3: 'image/imgPrueba10.jpg'
         },
         {
             id: '3',
@@ -32,9 +32,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
-            imgExtra1: 'image/example.png',
-            imgExtra2: 'image/example.png',
-            imgExtra3: 'image/example.png'
+            imgExtra1: 'image/imgPrueba8.jpg',
+            imgExtra2: 'image/imgPrueba9.jpg',
+            imgExtra3: 'image/imgPrueba10.jpg'
         },
         {
             id: '4',
@@ -43,9 +43,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
-            imgExtra1: 'image/example.png',
-            imgExtra2: 'image/example.png',
-            imgExtra3: 'image/example.png'
+            imgExtra1: 'image/imgPrueba8.jpg',
+            imgExtra2: 'image/imgPrueba9.jpg',
+            imgExtra3: 'image/imgPrueba10.jpg'
         },
     ];
     
@@ -72,7 +72,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                         <div class="noticias-texto-position">
                         <p class="text-more" id="vma${noticia.id}" onclick="
                             document.getElementById('n${noticia.id}').style.visibility = 'visible'; 
-                            document.getElementById('n${noticia.id}').style.height = '240px'; 
+                            document.getElementById('n${noticia.id}').style.height = '46vh'; 
                             document.getElementById('n${noticia.id}').style.opacity = '1';
                             document.getElementById('n${noticia.id}').style.transition = 'visibility 2s, opacity 2s, height 0.4s';
                             

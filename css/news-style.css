@@ -85,7 +85,7 @@
 }
 
 .addition-img{
-    margin: 100px;
+    margin: 10px;
 }
 
 .addition-img img{
@@ -152,5 +152,14 @@ canvas{
     }
     .data-2{
         display: block;
+    }
+    .noticias-adicional{
+        display: block;
+    }
+    .addition-img{
+        text-align: center;
+    }
+    .addition-img img{
+        width: 100%;
     }
 }
