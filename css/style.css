@@ -84,8 +84,7 @@ nav ul li:hover{
 nav a{
     display: block;
     color: white;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
     text-align: center;
     text-decoration: none;
 }
@@ -138,4 +137,45 @@ footer{
 canvas{
     background-color: #412D1D;
     width: 100%;
+}
+
+
+@media (max-width: 425px){
+    .fondo-logo{
+        height: 344px;
+    }
+    .logo img{
+        width: 34%;
+    }
+    nav ul{
+        line-height: 22px;
+    }
+    nav a{
+        font-size: 12px;
+        padding: 0 4px;
+    }
+    #contenidoGeneral{
+        display: block;
+    }
+    .logo-inicio{
+        height: 130px;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .logo-inicio img{
+        height: 100%;
+    }
+    .info-inicio{
+        text-align: center;
+        border-radius: 20px;
+    }
+    .title-inicio{
+        font-size: 15px;
+    }
+    .description-inicio{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 14px;
+    }
 }
