@@ -72,7 +72,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                         <div class="noticias-texto-position">
                         <p class="text-more" id="vma${noticia.id}" onclick="
                             document.getElementById('n${noticia.id}').style.visibility = 'visible'; 
-                            document.getElementById('n${noticia.id}').style.height = '46vh'; 
+                            document.getElementById('n${noticia.id}').style.height = '48vh'; 
                             document.getElementById('n${noticia.id}').style.opacity = '1';
                             document.getElementById('n${noticia.id}').style.transition = 'visibility 2s, opacity 2s, height 0.4s';
                             
