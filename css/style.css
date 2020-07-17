@@ -179,3 +179,12 @@ canvas{
         font-size: 14px;
     }
 }
+
+@media (max-width: 375px){
+    .logo img {
+        width: 39%;
+    }
+    nav a{
+        font-size: 10px;
+    }
+}
