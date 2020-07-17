@@ -146,6 +146,7 @@ canvas{
     }
     .logo img{
         width: 34%;
+        height: 34%;
     }
     nav ul{
         line-height: 22px;
@@ -183,6 +184,7 @@ canvas{
 @media (max-width: 413px){
     .logo img {
         width: 39%;
+        height: 39%;
     }
     nav a{
         font-size: 10px;
@@ -192,6 +194,7 @@ canvas{
 @media (max-width: 356px){
     .fondo-logo{
         height: 330px;
+        height: 39%;
     }
     nav a{
         font-size: 8px;
