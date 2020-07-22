@@ -192,6 +192,12 @@ canvas{
     }
 }
 
+@media (max-width: 667px){
+    nav a{
+        padding: 0 16px;
+    }
+}
+
 
 @media (max-width: 425px){
     .fondo-logo{
