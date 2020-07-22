@@ -113,6 +113,12 @@ canvas{
     width: 100%;
 }
 
+@media (max-width: 1024px){
+    .noticias-head{
+        display: block;
+    }
+}
+
 @media (max-width: 425px){
     #contenidoNoticias{
         padding: 25px 14px;
