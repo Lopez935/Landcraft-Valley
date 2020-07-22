@@ -7,7 +7,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             name: 'Ricardo Lopez',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            status: 25,
+            puntos: 25,
+            status: 'nose',
             facebook: '',
             twitter: '',
             youtube: '',
@@ -17,7 +18,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             name: 'Carlos Flores',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            status: 20,
+            puntos: 25,
+            status: 'nose',
             facebook: '',
             twitter: '',
             youtube: '',
@@ -27,7 +29,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             name: 'Jorge Garza',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            status: 26,
+            puntos: 40,
+            status: 'nose',
             facebook: '',
             twitter: '',
             youtube: '',
@@ -37,7 +40,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             name: 'Alberto Garza',
             img: '',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
-            status: 18,
+            puntos: 50,
+            status: 'nose',
             facebook: '',
             twitter: '',
             youtube: '',
@@ -85,7 +89,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
                         <p>
                             ${participantes[aleatorio].description}
                         </p>
-                        <p>Puntos: ${participantes[aleatorio].status}</p>
+                        <p class="puntos">Puntos: <strong>${participantes[aleatorio].puntos}</strong></p>
+                        <p class="status">Status: <strong>${participantes[aleatorio].status}</strong></p>
                         <div class="social">
                             <a href="${participantes[aleatorio].facebook}" class="facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="${participantes[aleatorio].twitter}" class="twitter"><i class="fab fa-twitter"></i></a>
