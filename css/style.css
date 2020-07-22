@@ -247,7 +247,6 @@ canvas{
 @media (max-width: 356px){
     .fondo-logo{
         height: 330px;
-        height: 39%;
     }
     nav a{
         font-size: 8px;
