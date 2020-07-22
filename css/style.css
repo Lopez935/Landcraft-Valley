@@ -108,6 +108,10 @@ nav a{
     display: flex;
 }
 
+.general-container{
+    display: flex;
+}
+
 .logo-inicio{
     padding: 0 50px 0 25px;
 }
@@ -142,6 +146,50 @@ footer{
 canvas{
     background-color: #412D1D;
     width: 100%;
+}
+
+@media (max-width: 1024px){
+    .logo img{
+        width: 31%;
+        height: 31%;
+    }
+    nav a {
+        padding: 0 40px;
+    }
+    .general-container{
+        display: block;
+    }
+    .logo-inicio{
+        text-align: center;
+    }
+}
+
+@media (max-width: 958px){
+    .logo img{
+        width: 34%;
+        height: 34%;
+    }
+}
+
+@media (max-width: 768px){
+    .logo img{
+        width: 41%;
+        height: 41%;
+    }
+    nav a {
+        padding: 0 25px;
+    }
+    .general-container{
+        display: block;
+    }
+    .logo-inicio{
+        text-align: center;
+    }
+    .description-inicio{
+        margin-right: 40px;
+        margin-right: 0;
+        font-size: 25px;
+    }
 }
 
 
