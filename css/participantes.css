@@ -15,6 +15,9 @@
     border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .participantes img{
@@ -36,6 +39,15 @@
     line-height: 22px;
     margin-bottom: 20px;
     text-align: justify;
+}
+
+.puntos, .status {
+    color: maroon;
+    font-size: 17px;
+}
+
+.puntos strong, .status strong {
+    color: black;
 }
 
 .social{
@@ -77,15 +89,13 @@
 }
 
 .nombreImagen{
-    width: 30%;
-    /*float: left;*/
-    display: inline-block;
+    max-width: 30%;
     text-align: center;
-    margin-right: 3%;
+    margin-right: 40px;
 }
 
 .descripcion{
-    width: 60%;
+    max-width: 63%;
     display: inline-block;
 }
 
@@ -99,4 +109,94 @@ footer{
 canvas{
     background-color: #412D1D;
     width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .nombreImagen {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .participantes {
+        display: block;
+        text-align: center;
+    }
+
+    .nombreImagen {
+        max-width: 100%;
+    }
+
+    .descripcion {
+        max-width: 100%;
+        float: none;
+    }
+
+    .social {
+        float: none;
+        margin-top: 1em;
+    }
+
+    .social a {
+        margin-bottom: .5em;
+        margin-left: .2em;
+        margin-right: .2em;
+        width: 2em;
+        height: 2em;
+    }
+
+    .nombreImagen img {
+        width: 30%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .nombreImagen h2 {
+        font-size: 1em;
+        margin: .3em;
+    }
+
+    .descripcion h3 {
+        font-size: 1em;
+        margin: .3em;
+    }
+
+    .descripcion p {
+        font-size: .6em;
+        margin: .3em;
+        line-height: 1.4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contenidoParticipantes{
+        padding: 25px 14px;
+    }
+
+    .nombreImagen img {
+        width: 50%;
+    }
+
+    .social a {
+        width: 1.6em;
+        height: 1.6em;
+    }
+
+    .nombreImagen h2 {
+        font-size: .8em;
+    }
+
+    .descripcion h3 {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fondo-logo {
+        height: 330px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
 }
