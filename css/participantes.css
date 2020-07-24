@@ -4,13 +4,13 @@
 }
 
 #contenidoParticipantes{
-    padding: 25px 50px;
+    padding: 3% 6%;
     background-color: transparent;
     font-size: Arial, Helvetica, sans-serif;
 }
 
 .participantes{
-    padding: 20px;
+    padding: 2%;
     background-color: var(--yellow-color);;
     border: 1px solid black;
     border-radius: 5px;
@@ -89,13 +89,13 @@
 }
 
 .nombreImagen{
-    max-width: 30%;
+    width: 30%;
     text-align: center;
-    margin-right: 40px;
+    margin-right: 2em;
 }
 
 .descripcion{
-    max-width: 63%;
+    width: 60%;
     display: inline-block;
 }
 
@@ -124,11 +124,12 @@ canvas{
     }
 
     .nombreImagen {
-        max-width: 100%;
+        width: 63%;
+        margin: 0 auto;
     }
 
     .descripcion {
-        max-width: 100%;
+        max-width: 80%;
         float: none;
     }
 
@@ -146,7 +147,7 @@ canvas{
     }
 
     .nombreImagen img {
-        width: 30%;
+        width: 50%;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -175,6 +176,10 @@ canvas{
 
     .nombreImagen img {
         width: 50%;
+    }
+
+    .descripcion {
+        width: 80%;
     }
 
     .social a {
