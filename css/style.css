@@ -58,7 +58,8 @@ body{
 }
 
 .logo img{
-    width: 17%;
+    width: 14em;
+    height: 14em;
 }
 
 nav{
@@ -114,6 +115,13 @@ nav a{
 
 .logo-inicio{
     padding: 0 50px 0 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-inicio img{
+    width: 10em;
+
 }
 
 .info-inicio{
@@ -147,38 +155,38 @@ canvas{
     background-color: #412D1D;
     width: 100%;
 }
+@media (max-width: 1404px) {
+    nav a {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 1360px) {
+    .description-inicio {
+        font-size: 23px;
+        margin-right: 0;
+    }
+}
 
 @media (max-width: 1024px){
-    .logo img{
-        width: 31%;
-        height: 31%;
-    }
-    nav a {
-        padding: 0 40px;
-    }
     .general-container{
         display: block;
     }
     .logo-inicio{
         text-align: center;
     }
+    .description-inicio {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 958px){
-    .logo img{
-        width: 34%;
-        height: 34%;
+@media (max-width: 863px){
+    nav a {
+        padding: 0 1em;
     }
 }
 
 @media (max-width: 768px){
-    .logo img{
-        width: 41%;
-        height: 41%;
-    }
-    nav a {
-        padding: 0 25px;
-    }
     .general-container{
         display: block;
     }
@@ -192,13 +200,44 @@ canvas{
     }
 }
 
-@media (max-width: 667px){
+@media (max-width: 682px){
     nav a{
-        padding: 0 16px;
+        padding: 0 8px;
+        font-size: 15px;
     }
-    .logo img{
-        width: 47%;
-        height: 47%;
+}
+
+@media (max-width: 592px){
+    nav a{
+        padding: 0 2px;
+    }
+}
+
+@media (max-width: 500px){
+    #contenidoGeneral{
+        display: block;
+    }
+    .logo-inicio{
+        height: 130px;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .logo-inicio img{
+        height: 7em;
+        width: 7em;
+    }
+    .info-inicio{
+        text-align: center;
+        border-radius: 20px;
+    }
+    .title-inicio{
+        font-size: 15px;
+    }
+    .description-inicio{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
     }
 }
 
@@ -206,10 +245,6 @@ canvas{
 @media (max-width: 425px){
     .fondo-logo{
         height: 344px;
-    }
-    .logo img{
-        width: 34%;
-        height: 34%;
     }
     nav ul{
         line-height: 22px;
@@ -245,9 +280,9 @@ canvas{
 }
 
 @media (max-width: 413px){
-    .logo img {
-        width: 39%;
-        height: 39%;
+    .logo img{
+        width: 100px;
+        height: 100px;
     }
     nav a{
         font-size: 10px;
