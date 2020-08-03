@@ -242,9 +242,13 @@ canvas{
 }
 
 
-@media (max-width: 425px){
+@media (max-width: 480px){
     .fondo-logo{
         height: 344px;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
     }
     nav ul{
         line-height: 22px;
@@ -292,6 +296,10 @@ canvas{
 @media (max-width: 356px){
     .fondo-logo{
         height: 330px;
+    }
+    .logo img{
+        width: 86px;
+        height: 86px;
     }
     nav a{
         font-size: 8px;
