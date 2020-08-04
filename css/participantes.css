@@ -27,8 +27,7 @@
 
 .participantes h2{
     border-radius: 3px;
-    color: white;
-    background-color: #BF4545;
+    color: black;
 }
 
 .participantes h3{
@@ -36,22 +35,23 @@
 }
 
 .participantes p{
-    line-height: 22px;
-    margin-bottom: 20px;
     text-align: justify;
+    line-height: 22px;
+}
+
+.status-social {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
 }
 
 .puntos, .status {
-    color: maroon;
     font-size: 17px;
-}
-
-.puntos strong, .status strong {
-    color: black;
-}
-
-.social{
-    float: right;
 }
 
 .social a{
@@ -89,14 +89,15 @@
 }
 
 .nombreImagen{
-    width: 30%;
+    width: 23%;
     text-align: center;
     margin-right: 2em;
 }
 
 .descripcion{
-    width: 60%;
+    width: 69%;
     display: inline-block;
+    position: relative;
 }
 
 /*Footer*/
@@ -133,6 +134,11 @@ canvas{
         float: none;
     }
 
+    .status-social {
+        display: block;
+        position: relative;
+    }
+
     .social {
         float: none;
         margin-top: 1em;
@@ -148,16 +154,11 @@ canvas{
 
     .nombreImagen img {
         width: 50%;
-        margin-top: auto;
+        margin-top: .5em;
         margin-bottom: auto;
     }
 
-    .nombreImagen h2 {
-        font-size: 1em;
-        margin: .3em;
-    }
-
-    .descripcion h3 {
+    .descripcion h2 {
         font-size: 1em;
         margin: .3em;
     }

@@ -6,7 +6,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         {
             name: 'Ricardo Lopez',
             img: '',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
             puntos: 25,
             status: 'nose',
             facebook: '',
@@ -81,21 +81,24 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         divPart.innerHTML = `
             <div class="participantes">
                 <div class="nombreImagen">
-                    <h2>${participantes[aleatorio].name}</h2>
                     <img src="image/imgParticipante.png" alt="imagen participante">
                 </div>
                 <div class="descripcion">
-                        <h3>Descripcion</h3>
+                        <h2>${participantes[aleatorio].name}</h2>
                         <p>
                             ${participantes[aleatorio].description}
                         </p>
-                        <p class="puntos">Puntos: <strong>${participantes[aleatorio].puntos}</strong></p>
-                        <p class="status">Status: <strong>${participantes[aleatorio].status}</strong></p>
-                        <div class="social">
-                            <a href="${participantes[aleatorio].facebook}" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="${participantes[aleatorio].twitter}" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="${participantes[aleatorio].youtube}" class="youtube"><i class="fab fa-youtube"></i></a>
-                            <a href="${participantes[aleatorio].twitch}" class="twitch"><i class="fab fa-twitch"></i></a>
+                        <div class="status-social">
+                            <div class="status">
+                                <p class="puntos"><strong>Puntos:</strong> ${participantes[aleatorio].puntos}</p>
+                                <p class="status"><strong>Status:</strong> ${participantes[aleatorio].status}</p>
+                            </div>
+                            <div class="social">
+                                <a href="${participantes[aleatorio].facebook}" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="${participantes[aleatorio].twitter}" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="${participantes[aleatorio].youtube}" class="youtube"><i class="fab fa-youtube"></i></a>
+                                <a href="${participantes[aleatorio].twitch}" class="twitch"><i class="fab fa-twitch"></i></a>
+                            </div>
                         </div>
                 </div>
             </div>
