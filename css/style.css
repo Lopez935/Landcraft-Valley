@@ -20,8 +20,11 @@ body, html {
 
 body{
     margin: 0px;
-    background-image: url(../image/fondo.png);
-    background-attachment: fixed;
+    background: url(../image/body-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -45,31 +48,28 @@ body{
 }
 
 .fondo-logo{
-    height: 465px;   /* Cambiando 465 por 1000px*/
-    background-color: var(--morado-color);
-    border: 1px solid;
-    border-radius: 100%;
-    margin-bottom: -243px;  /*Cambiando -243 por -770px*/
+    background-image: url(../image/header-deco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .logo{
+    height: 26.8vh;
     display: flex;
     justify-content: center;
 }
 
 .logo img{
-    width: 14em;
-    height: 14em;
+    width: 12em;
+    height: 12em;
 }
 
 nav{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ca2c2c;
-    border: 1px solid black;
     text-transform: uppercase;
     width: 100%;
+    height: 0;
     line-height: 80px;
-    margin-top: -6px;
     box-sizing: border-box;
 }
 
@@ -80,27 +80,36 @@ nav ul{
 
 nav ul li{
     display: inline-block;
+    padding: 0 4em;
+    background-image: url(../image/menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    top: -25px;
     transition: all 300ms;
 }
 
-nav ul li:hover{
-    background-color: green;
+nav ul li a:hover{
+    font-weight: bold;
 }
 
 nav a{
     display: block;
-    color: white;
-    padding: 0 60px;
+    color: gray;
     text-align: center;
     text-decoration: none;
 }
 
 #contentGlobal{
-    background-color: var(--morado-color);
+    background-image: url(../image/blue-cubes.png);
+    background-repeat: no-repeat;
+    background-color: #003366;
+    border: 1px solid #336699;
 }
 
 #contenidoGeneral{
-    padding: 20px;
+    padding: 8px 40px 0;
     color: #000000; 
     font-size: 18px; 
     font-weight: 400; 
@@ -121,24 +130,59 @@ nav a{
 
 .logo-inicio img{
     width: 10em;
-
+    margin-top: 32px;
 }
 
 .info-inicio{
     padding: 20px;
-    background-color: var(--yellow-color);
+    /* background-color: var(--yellow-color); */
+    /* background: url(../image/home-post-top.png) top no-repeat, 
+    url(../image/home-post-bottom.png) bottom no-repeat; */
+    /* background-color: #D9D6E0; */
+    background-size: contain;
+    /* width: 300px; */
 }
 
 .title-inicio{
-    margin-bottom: 10px;
-    text-shadow: 0 0 6px purple;
-    font-size: 35px;
+    display: flex;
+    align-items: center;
+    background-image: url(../image/home-post-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    height: 10em;
+}
+
+.inicio-image-container{
+    border-bottom: 1px solid black;
+    margin-left: 60px;
+    padding-bottom: 8px;
+    margin-top: 14px;
+}
+
+#espacio-inicio{
+    position: relative;
+    top: -30px;
+    background-image: url(../image/home-post-bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 28px;
+    margin-right: -1px;
+    height: 10em;
 }
 
 .description-inicio{
-    margin-left: 60px;
-    margin-right: 74px;
-    font-size: 28px;
+    background-color: #D9D6E0;
+    margin-left: 29px;
+    margin-right: 0.4vw;
+    padding-left: 50px;
+    padding-right: 74px;
+    font-size: 22px;
+}
+
+.description-inicio p {
+    position: relative;
+    top: -30px;
 }
 
 
@@ -147,7 +191,6 @@ nav a{
 /*Footer*/
 footer{
     height: 190px;
-    background-color: #412D1D;
     color: white;
 }
 

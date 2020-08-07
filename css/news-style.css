@@ -1,9 +1,5 @@
 /* Contenido noticias*/
 
-#contentGlobal{
-    background-color: var(--morado-color);
-}
-
 #contenidoNoticias{
     padding: 25px 50px;
     color: #000000; 
