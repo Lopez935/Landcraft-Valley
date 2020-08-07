@@ -51,17 +51,20 @@ body{
     background-image: url(../image/header-deco.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .logo{
-    height: 26.8vh;
     display: flex;
     justify-content: center;
+    padding-top: 1em;
 }
 
 .logo img{
     width: 12em;
-    height: 12em;
+    height: 13em;
+    padding-bottom: 4em;
 }
 
 nav{
