@@ -1,8 +1,11 @@
 :root{
     --morado-color: #C8B9F2;
     --yellow-color: #EDDF93;
-    --primary-color: #003366;
-    --secundary-color: #336699;
+    --color-primary: #003366;
+    --color-secundary: #336699;
+    --color-variation: #D9D6E0;
+    --color-tertiary: #FF9922;
+    --color-tertiary-variation: #993300;
 }
 
 *{
@@ -109,8 +112,8 @@ nav a{
 #contentGlobal{
     background-image: url(../image/blue-cubes.png);
     background-repeat: no-repeat;
-    background-color: var(--primary-color);
-    border: 1px solid var(--secundary-color);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secundary);
 }
 
 #contenidoGeneral{
@@ -177,7 +180,7 @@ nav a{
 }
 
 .description-inicio{
-    background-color: #D9D6E0;
+    background-color: var(--color-variation);
     margin-left: 29px;
     margin-right: 0.4vw;
     padding-left: 50px;
@@ -209,7 +212,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 100%;
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--color-secundary);
     border-radius: 10px;
 }
 

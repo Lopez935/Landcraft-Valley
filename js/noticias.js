@@ -6,8 +6,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
         {
             id: '1',
             title: 'Hallowen',
-            time: 'DD/MM/AA - Hora',
-            img: '',
+            date: 'DD/MM/AA',
+            time: 'Hora',
+            img: 'image/imgPrueba8.jpg',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/imgPrueba8.jpg',
@@ -17,8 +18,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
         {
             id: '2',
             title: 'Navidad',
-            time: 'DD/MM/AA - Hora',
-            img: '',
+            date: 'DD/MM/AA',
+            time: 'Hora',
+            img: 'image/imgPrueba9.jpg',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/imgPrueba8.jpg',
@@ -28,8 +30,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
         {
             id: '3',
             title: 'Hallowen',
-            time: 'DD/MM/AA - Hora',
-            img: '',
+            date: 'DD/MM/AA',
+            time: 'Hora',
+            img: 'image/imgPrueba8.jpg',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/imgPrueba8.jpg',
@@ -39,8 +42,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
         {
             id: '4',
             title: 'Hallowen',
-            time: 'DD/MM/AA - Hora',
-            img: '',
+            date: 'DD/MM/AA',
+            time: 'Hora',
+            img: 'image/imgPrueba10.jpg',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             etiquetas: 'Quis ut elit eiusmod in officia aute pariatur elit.',
             imgExtra1: 'image/imgPrueba8.jpg',
@@ -53,24 +57,27 @@ const listaNoticias = document.getElementById('contenidoNoticias');
         const divPart = document.createElement('div');
         divPart.innerHTML = `
             <div class="noticia-container">
-                <div class="noticias-head">
-                    <div class="noticias-date">
-                        <img class="badge" src="image/exampleLogo.png">
-                        <p class="data">${noticia.time}</p>
-                    </div>
-                    <div class="noticias-title">
-                        <h2>${noticia.title}</h2>
+                <div class="noticias-left">
+                    <div class="principal-img">
+                        <img src="${noticia.img}">
                     </div>
                 </div>
-                <div class="noticias-contenido">
-                    <div class="principal-img">
-                        <img src="image/example.png">
-                        <p>${noticia.etiquetas}</p>
+                <div class="noticias-right">
+                    <div class="noticias-head">
+                        <div class="noticias-title">
+                            <h2>${noticia.title}</h2>
+                        </div>
+                        <div class="noticias-date">
+                            <img src="image/date-icon.png">
+                            <p class="data">${noticia.date} - </p>
+                            <img src="image/time-icon.png">
+                            <p>${noticia.time}</p>
+                        </div>
                     </div>
                     <div class="noticias-texto">
                         <p>${noticia.description}</p>
                         <div class="noticias-texto-position">
-                        <p class="text-more" id="vma${noticia.id}" onclick="
+                            <div class="text-container text-more" id="vma${noticia.id}" onclick="
                             document.getElementById('n${noticia.id}').style.visibility = 'visible'; 
                             document.getElementById('n${noticia.id}').style.height = '48vh'; 
                             document.getElementById('n${noticia.id}').style.opacity = '1';
@@ -78,8 +85,10 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                             
                             
                             document.getElementById('vma${noticia.id}').style.display = 'none'; 
-                            document.getElementById('vme${noticia.id}').style.display = 'contents'" style="display:contents;">Ver mas</p>
-                            <p class="text-less" id="vme${noticia.id}" onclick="
+                            document.getElementById('vme${noticia.id}').style.display = 'block'">
+                                <p>Ver más</p>
+                            </div>
+                            <div class="text-container text-less" id="vme${noticia.id}" onclick="
                             document.getElementById('n${noticia.id}').style.visibility = 'hidden'; 
                             document.getElementById('n${noticia.id}').style.height = '0px';
                             document.getElementById('n${noticia.id}').style.opacity = '0';
@@ -87,7 +96,9 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                             
                             
                             document.getElementById('vme${noticia.id}').style.display = 'none'; 
-                            document.getElementById('vma${noticia.id}').style.display = 'contents'" style="display:none;">Ver menos</p>
+                            document.getElementById('vma${noticia.id}').style.display = 'block'" style="display:none;">
+                                <p>Ver menos</p>
+                            </div>
                         </div>
                         <p class="data-2">${noticia.time}</p>
                     </div>
