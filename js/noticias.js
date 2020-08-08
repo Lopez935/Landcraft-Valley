@@ -55,6 +55,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
     
     noticias.forEach(function(noticia, index){
         const divPart = document.createElement('div');
+        divPart.className += "noticias-background";
         divPart.innerHTML = `
             <div class="noticia-container">
                 <div class="noticias-left">
