@@ -98,18 +98,6 @@
     cursor: pointer;
 }
 
-/*Footer*/
-footer{
-    height: 190px;
-    background-color: #412D1D;
-    color: white;
-}
-
-canvas{
-    background-color: #412D1D;
-    width: 100%;
-}
-
 @media (max-width: 1490px){
     .addition-img img{
         width: 19vw;

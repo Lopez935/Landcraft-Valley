@@ -96,18 +96,6 @@
     position: relative;
 }
 
-/*Footer*/
-footer{
-    height: 190px;
-    background-color: #412D1D;
-    color: white;
-}
-
-canvas{
-    background-color: #412D1D;
-    width: 100%;
-}
-
 @media screen and (max-width: 1024px) {
     .nombreImagen {
         margin-right: auto;

@@ -1,6 +1,8 @@
 :root{
     --morado-color: #C8B9F2;
     --yellow-color: #EDDF93;
+    --primary-color: #003366;
+    --secundary-color: #336699;
 }
 
 *{
@@ -107,8 +109,8 @@ nav a{
 #contentGlobal{
     background-image: url(../image/blue-cubes.png);
     background-repeat: no-repeat;
-    background-color: #003366;
-    border: 1px solid #336699;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
 }
 
 #contenidoGeneral{
@@ -193,9 +195,54 @@ nav a{
 
 /*Footer*/
 footer{
-    height: 190px;
+    width: 71%;
+    height: 10%;
+    margin: 50px auto 70px;
+    padding: 3px;
     color: white;
+    background-color: black;
+    border-radius: 10px;
 }
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    border: 1px solid var(--secundary-color);
+    border-radius: 10px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+}
+
+.footer__diamond {
+    margin: 10px;
+}
+
+.footer__text {
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+.footer__figure {
+    text-align: center;
+}
+
 
 canvas{
     background-color: #412D1D;

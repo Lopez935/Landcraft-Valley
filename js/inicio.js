@@ -5,7 +5,7 @@ const indexMain = document.getElementById('contenidoGeneral');
         {
             titleImage: 'image/bienvenido.png',
             img: 'image/white-cubes.png',
-            description: 'Lorem impusm dolor sit amet, consectetur adipiseing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo enim ad sunt consectetur proident amet consectetur commodo tempor minim proident Lorem aliquip. Nostrud culpa et duis irure. Magna esse occaecat ipsum ipsum irure occaecat reprehenderit deserunt nulla elit laborum.<br><br>Commodo adipisicing incididunt amet non deserunt. Ipsum aliqua pariatur mollit fugiat qui sunt magna aute ea veniam velit nostrud qui id. Sunt cillum incididunt sit eu dolore elit anim in cupidatat anim voluptate amet Lorem. Lorem anim velit proident eu aliqua velit cupidatat quis qui et occaecat aliquip in laborum.',
+            description: '<strong>¿Qué es Landcraft Valley?</strong><br>Landcraft Valley es un servidor privado de Minecraf compuestos por creadores de contenido de variedad y Minecraft. Somos amigos, conocidos y colegas que buscan pasarla bien, jugar juntos y, en el proceso, crear grandes cosas.<br><br><strong>¿Qué tienen que hacer los participantes?</strong><br><br>Los participantes tendrán que crear una mega construcción, cuyo único requisito es ser grande. Como es un proyecto principalmente individual es posible que sea diferente a otras mega construcciones comunitarias que conozcas. Quizá incluso un poco más pequeña. <br><br>¡Echa un vistazo a la <a href="/participantes.html">lista de participantes</a> y <a href="/noticias.html">noticias</a> para más información!',
         },
     ];
     
