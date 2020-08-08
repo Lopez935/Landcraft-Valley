@@ -23,8 +23,9 @@ const indexMain = document.getElementById('contenidoGeneral');
                     </div>
                 </div>
                 <div class="description-inicio">
-                    <p>${info.description}
-                    </p>
+                    <div class="description-inicio-bg">
+                        <p>${info.description}</p>
+                    </div>
                 </div>
                 <div id="espacio-inicio">&nbsp;</div>
             </div>
