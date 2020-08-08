@@ -45,7 +45,7 @@
 }
 
 .principal-img {
-    width: 500px;
+    width: 90%;
     font-size: 10px;
     color: gray;
 }
@@ -84,6 +84,8 @@
 
 .noticias-texto-position {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: -20px;
     justify-content: flex-end;
 }
 
