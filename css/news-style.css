@@ -284,7 +284,7 @@
     .data-2 {
         display: flex;
         align-items: center;
-        font-size: 10px;
+        font-size: 7px;
     }
     .data-2 img{
         height: 14px;
@@ -320,8 +320,5 @@
     }
     .text-container{
         padding: 0 5px;
-    }
-    .data-2{
-        font-size: 7px;
     }
 }
