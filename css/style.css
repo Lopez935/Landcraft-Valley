@@ -309,16 +309,13 @@ canvas{
         width: 100%;
     }
 }
-@media (max-width: 1390px) {
-    nav a {
-        /* padding: 0 1em; */
-    }
-}
 
 @media (max-width: 1360px) {
     .description-inicio {
-        font-size: 23px;
         margin-right: 8px;
+    }
+    .description-inicio p{
+        font-size: 23px;
     }
     .footer__text {
         font-size: 10px;
@@ -331,7 +328,7 @@ canvas{
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1090px){
     nav ul li {
         padding: 0 2em;
     }
@@ -342,8 +339,10 @@ canvas{
         text-align: center;
     }
     .description-inicio {
-        font-size: 20px;
         margin-right: 6px;
+    }
+    .description-inicio p{
+        font-size: 20px;
     }
     .footer__text {
         font-size: 8px;
@@ -372,7 +371,7 @@ canvas{
     }
 }
 
-@media (max-width: 863px){
+@media (max-width: 910px){
     nav a {
         padding: 0;
         font-size: 12px;
@@ -408,12 +407,14 @@ canvas{
     .description-inicio{
         margin-left: 0;
         margin-right: 0;
-        font-size: 15px;
         background-image: none;
         background-color: var(--color-variation);
         border-right: 5px double var(--color-secundary); 
         border-left: 5px double var(--color-secundary);
         border-bottom: 5px double var(--color-secundary);
+    }
+    .description-inicio p{
+        font-size: 15px;
     }
     #espacio-inicio{
         display: none;
@@ -436,7 +437,7 @@ canvas{
     }
 }
 
-@media (max-width: 592px){
+@media (max-width: 600px){
     nav a{
         font-size: 10px;
     }
@@ -445,7 +446,7 @@ canvas{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 540px){
     #contenidoGeneral{
         display: block;
     }
@@ -476,7 +477,7 @@ canvas{
 }
 
 
-@media (max-width: 490px){
+@media (max-width: 505px){
     .hero img{
         width: 100px;
         height: 100px;
@@ -489,7 +490,7 @@ canvas{
         padding: 0 6px;
     }
     nav a{
-        font-size: 10px;
+        font-size: 8px;
         padding: 0 4px;
     }
     #contenidoGeneral{
@@ -510,6 +511,8 @@ canvas{
     .description-inicio{
         margin-left: 0;
         margin-right: 0;
+    }
+    .description-inicio p{
         font-size: 11px;
     }
 }
@@ -541,13 +544,13 @@ canvas{
     nav a{
         font-size: 7px;
     }
-    .description-inicio{
+    .description-inicio p{
         font-size: 10px;
     }
 }
 
 @media (max-width: 320px){
     nav a{
-        font-size: 6px;
+        font-size: 5px;
     }
 }

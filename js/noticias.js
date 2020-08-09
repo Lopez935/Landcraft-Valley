@@ -73,7 +73,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                                 <img src="image/date-icon.png">
                                 <p class="data">${noticia.date} - </p>
                                 <img src="image/time-icon.png">
-                                <p>${noticia.time}</p>
+                                <p class="data">${noticia.time}</p>
                             </div>
                         </div>
                         <div class="second-img">
@@ -109,7 +109,7 @@ const listaNoticias = document.getElementById('contenidoNoticias');
                                 <img src="image/date-icon.png">
                                 <p class="data">${noticia.date} - </p>
                                 <img src="image/time-icon.png">
-                                <p>${noticia.time}</p>
+                                <p class="data">${noticia.time}</p>
                             </div>
                         </div>
                     </div>
