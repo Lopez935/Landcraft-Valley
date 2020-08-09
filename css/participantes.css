@@ -1,8 +1,4 @@
 /*Contenido Global*/
-#contentGlobal{
-    background-color: var(--morado-color);;
-}
-
 #contenidoParticipantes{
     padding: 3% 6%;
     background-color: transparent;
@@ -100,18 +96,6 @@
     position: relative;
 }
 
-/*Footer*/
-footer{
-    height: 190px;
-    background-color: #412D1D;
-    color: white;
-}
-
-canvas{
-    background-color: #412D1D;
-    width: 100%;
-}
-
 @media screen and (max-width: 1024px) {
     .nombreImagen {
         margin-right: auto;
@@ -194,15 +178,5 @@ canvas{
 
     .descripcion h3 {
         font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .fondo-logo {
-        height: 330px;
-    }
-
-    nav a {
-        font-size: 8px;
     }
 }

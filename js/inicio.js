@@ -3,9 +3,9 @@ const indexMain = document.getElementById('contenidoGeneral');
 (function(tecnologia){
     var infoIndex = [
         {
-            title: '¿Qué es OmegaCraft?',
-            img: 'image/exampleLogo.png',
-            description: 'Id culpa qui quis nostrud eiusmod nostrud. Duis nostrud ullamco aute anim cillum veniam proident anim cillum voluptate elit enim commodo. Commodo enim ad sunt consectetur proident amet consectetur commodo tempor minim proident Lorem aliquip. Nostrud culpa et duis irure. Magna esse occaecat ipsum ipsum irure occaecat reprehenderit deserunt nulla elit laborum.<br>Commodo adipisicing incididunt amet non deserunt. Ipsum aliqua pariatur mollit fugiat qui sunt magna aute ea veniam velit nostrud qui id. Sunt cillum incididunt sit eu dolore elit anim in cupidatat anim voluptate amet Lorem. Lorem anim velit proident eu aliqua velit cupidatat quis qui et occaecat aliquip in laborum.',
+            titleImage: 'image/bienvenido.png',
+            img: 'image/white-cubes.png',
+            description: '<strong>¿Qué es Landcraft Valley?</strong><br><br>Landcraft Valley es un servidor privado de Minecraf compuestos por creadores de contenido de variedad y Minecraft. Somos amigos, conocidos y colegas que buscan pasarla bien, jugar juntos y, en el proceso, crear grandes cosas.<br><br><strong>¿Qué tienen que hacer los participantes?</strong><br><br>Los participantes tendrán que crear una mega construcción, cuyo único requisito es ser grande. Como es un proyecto principalmente individual es posible que sea diferente a otras mega construcciones comunitarias que conozcas. Quizá incluso un poco más pequeña. <br><br>¡Echa un vistazo a la <a href="/participantes.html">lista de participantes</a> y <a href="/noticias.html">noticias</a> para más información!',
         },
     ];
     
@@ -18,12 +18,16 @@ const indexMain = document.getElementById('contenidoGeneral');
             </div>
             <div class="info-inicio">
                 <div class="title-inicio">
-                    <h1>${info.title}</h1>
+                    <div class="inicio-image-container">
+                        <img src="${info.titleImage}">
+                    </div>
                 </div>
                 <div class="description-inicio">
-                    <p>${info.description}
-                    </p>
+                    <div class="description-inicio-bg">
+                        <p>${info.description}</p>
+                    </div>
                 </div>
+                <div id="espacio-inicio">&nbsp;</div>
             </div>
         </div>
         `;
