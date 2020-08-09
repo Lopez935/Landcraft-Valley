@@ -8,6 +8,16 @@
     --color-tertiary-variation: #993300;
 }
 
+@font-face {
+    font-family: Avara;
+    src: url(../fuentes/Avara/Avara.otf) format("opentype");
+}
+@font-face {
+    font-family: Avara;
+    font-style: italic;
+    src: url(../fuentes/Avara/Avara-italic.otf) format("opentype");
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -110,6 +120,7 @@ nav a{
     color: gray;
     text-align: center;
     text-decoration: none;
+    font-family: Avara;
 }
 
 #contentGlobal{
@@ -186,7 +197,15 @@ nav a{
 .description-inicio{
     margin-left: 29px;
     margin-right: 0.4vw;
+}
+
+.description-inicio p{
     font-size: 22px;
+    font-family: Avara;
+}
+
+.description-inicio strong{
+    color: var(--color-secundary);
 }
 
 .description-inicio-bg{
