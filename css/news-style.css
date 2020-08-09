@@ -275,6 +275,9 @@
     .data-2 {
         font-size: 12px;
     }
+    .second-img {
+        margin: 0 0 20px 6px;
+    }
 }
 
 @media (max-width: 540px){
