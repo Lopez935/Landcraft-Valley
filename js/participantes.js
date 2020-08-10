@@ -4,13 +4,13 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
 (function(){
     var participantes = [
         {
-            name: 'Ricardo Lopez',
+            name: 'MarisaKurisu',
             img: 'image/profiles/profile1.png',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+            description: 'Retornando a los streams, animadora, ilustradora y jugadora de todo tipo de juegos. MarisaKurisu hace su llegada.',
             puntos: 25,
             status: 'nose',
             facebook: '',
-            twitter: '',
+            twitter: 'https://twitter.com/MarisaKurisu',
             youtube: '',
             twitch: '',
         },
@@ -94,10 +94,10 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
                                 <p class="status"><strong>Status:</strong> ${participantes[aleatorio].status}</p>
                             </div>
                             <div class="social">
-                                <a href="${participantes[aleatorio].facebook}" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="${participantes[aleatorio].twitter}" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="${participantes[aleatorio].youtube}" class="youtube"><i class="fab fa-youtube"></i></a>
-                                <a href="${participantes[aleatorio].twitch}" class="twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="${participantes[aleatorio].facebook}" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="${participantes[aleatorio].twitter}" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="${participantes[aleatorio].youtube}" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+                                <a href="${participantes[aleatorio].twitch}" target="_blank" class="twitch"><i class="fab fa-twitch"></i></a>
                             </div>
                         </div>
                 </div>
