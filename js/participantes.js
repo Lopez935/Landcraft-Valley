@@ -101,7 +101,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
                             </div>
                         </div>
                 </div>
-                <img class="participantes-image" src="../image/post-bg.png" width="870" alt="contorno">
+                <img class="participantes-image" src="image/post-bg.png" width="870" alt="contorno">
             </div>
         `;
         listaParticipantes.appendChild(divPart);
