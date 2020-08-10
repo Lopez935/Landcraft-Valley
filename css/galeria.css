@@ -18,7 +18,7 @@
     display: block;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
 }
 
 .gridFoto img{
@@ -33,7 +33,9 @@
 }
 
 #contentGlobal h2{
+    margin-top: 30px;
     margin-left: 1em;
+    color: white;
 }
 
 .light-box{

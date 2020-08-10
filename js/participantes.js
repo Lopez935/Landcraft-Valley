@@ -110,12 +110,12 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
     }
 })();
 
-const ipad = window.matchMedia('screen and (max-width: 1024px)');
+const menor1024 = window.matchMedia('screen and (max-width: 1024px)');
 const image = document.querySelectorAll('.participantes-image');
-ipad.addListener(validation);
+menor1024.addListener(validation);
 
 function validation(event) {
-    if (ipad.matches){
+    if (menor1024.matches){
         for(let i = 0; i < image.length; i++) {
             padre = image[i].parentElement;
             padre.removeChild(image[i]);
@@ -123,4 +123,4 @@ function validation(event) {
     }
 } 
 
-validation(ipad);
+validation(menor1024);
