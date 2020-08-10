@@ -5,7 +5,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
     var participantes = [
         {
             name: 'Ricardo Lopez',
-            img: '',
+            img: 'image/profiles/profile1.png',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
             puntos: 25,
             status: 'nose',
@@ -16,7 +16,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         },
         {
             name: 'Carlos Flores',
-            img: '',
+            img: 'image/profiles/profile2.png',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             puntos: 25,
             status: 'nose',
@@ -27,7 +27,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         },
         {
             name: 'Jorge Garza',
-            img: '',
+            img: 'image/profiles/profile3.png',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             puntos: 40,
             status: 'nose',
@@ -38,7 +38,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         },
         {
             name: 'Alberto Garza',
-            img: '',
+            img: 'image/profiles/profile4.png',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem',
             puntos: 50,
             status: 'nose',
@@ -81,7 +81,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
         divPart.innerHTML = `
             <div class="participantes">
                 <div class="nombreImagen">
-                    <img src="image/imgParticipante.png" alt="imagen participante">
+                    <img src="${participantes[aleatorio].img}" class="profiles" width="150" heigth="150" alt="imagen participante">
                 </div>
                 <div class="descripcion">
                         <h2>${participantes[aleatorio].name}</h2>
@@ -101,6 +101,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
                             </div>
                         </div>
                 </div>
+                <img class="participantes-image" src="../image/post-bg.png" width="870" alt="contorno">
             </div>
         `;
         listaParticipantes.appendChild(divPart);
@@ -109,3 +110,17 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
     }
 })();
 
+const ipad = window.matchMedia('screen and (max-width: 1024px)');
+const image = document.querySelectorAll('.participantes-image');
+ipad.addListener(validation);
+
+function validation(event) {
+    if (ipad.matches){
+        for(let i = 0; i < image.length; i++) {
+            padre = image[i].parentElement;
+            padre.removeChild(image[i]);
+        }
+    }
+} 
+
+validation(ipad);
