@@ -411,33 +411,8 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             twitch: 'https://www.twitch.tv/alexxxvo',
         },
     ];
-    /*
-    participantes.forEach(function(participante, index){
-        const divPart = document.createElement('div');
-        divPart.innerHTML = `
-            <div class="participantes">
-                <div class="nombreImagen">
-                    <h2>${participante.name}</h2>
-                    <img src="image/imgParticipante.png" alt="imagen participante">
-                </div>
-                <div class="descripcion">
-                        <h3>Descripcion</h3>
-                        <p>
-                            ${participante.description}
-                        </p>
-                        <p>Puntos: ${participante.status}</p>
-                        <div class="social">
-                            <a href="${participante.facebook}" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="${participante.twitter}" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="${participante.youtube}" class="youtube"><i class="fab fa-youtube"></i></a>
-                            <a href="${participante.twitch}" class="twitch"><i class="fab fa-twitch"></i></a>
-                        </div>
-                </div>
-            </div>
-        `;
-        listaParticipantes.appendChild(divPart);
-    });*/
 
+    
     for(let i = 0; i <= participantes.length; i++){
         aleatorio = Math.floor(Math.random()*(participantes.length));
         const divPart = document.createElement('div');
@@ -464,7 +439,7 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
                             </div>
                         </div>
                 </div>
-                <img class="participantes-image" src="image/post-bg.png" width="870" alt="contorno">
+                <img class="participantes-image" src="image/post-bg.png" width="300" alt="contorno">
             </div>
         `;
         listaParticipantes.appendChild(divPart);
@@ -473,17 +448,22 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
     }
 })();
 
-const menor1024 = window.matchMedia('screen and (max-width: 1024px)');
+const menor1301 = window.matchMedia('screen and (max-width: 1301px)');
 const image = document.querySelectorAll('.participantes-image');
-menor1024.addListener(validation);
+const participantes = document.querySelectorAll('.participantes');
+menor1301.addListener(validation);
 
 function validation(event) {
-    if (menor1024.matches){
+    if (menor1301.matches){
         for(let i = 0; i < image.length; i++) {
             padre = image[i].parentElement;
             padre.removeChild(image[i]);
         }
+    }else {
+        for(let i = 0; i < participantes.length; i++) {
+            participantes[i].appendChild(image[i]);
+        }
     }
 } 
 
-validation(menor1024);
+validation(menor1301);
