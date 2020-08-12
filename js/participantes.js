@@ -224,17 +224,6 @@ const listaParticipantes = document.getElementById('contenidoParticipantes');
             twitch: 'https://www.twitch.tv/axel_becerril',
         },
         {
-            name: 'Axel_Becerril',
-            img: 'image/profiles/profile20.png',
-            description: 'Programador de día, comediante standupero de noche. Speedrunner por temporadas y ahora jugador de Minecraft.<br>Axel_Becerril viene a tomar el micrófono abierto de Landcraft Valley.',
-            puntos: 0,
-            status: 'nose',
-            facebook: '#',
-            twitter: 'https://twitter.com/AxlBecerril',
-            youtube: '#',
-            twitch: 'https://www.twitch.tv/axel_becerril',
-        },
-        {
             name: 'DaveElBarbarísimo',
             img: 'image/profiles/profile21.png',
             description: '¡Cuenta la leyenda de un guerrero tan letal que sus enemigos quedaban ciegos por la sobreexposición a tanta barbarosida!<br><br>¡Ese guerrero es DaveElBarbarisimo quien llega Landcraft Valley! Un nombre tan bárbaro que apenas cupo en esta imagen.',
