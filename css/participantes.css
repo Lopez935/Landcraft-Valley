@@ -115,9 +115,11 @@
 }
 
 .nombreImagen{
-    padding-top: 1%;
-    width: 22%;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    margin-left: -5%;
 }
 
 .descripcion{
